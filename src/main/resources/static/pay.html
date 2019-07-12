@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="res/static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="res/layui/css/layui.css">
+	<script type="text/javascript" src="res/layui/layui.js"></script>
+	<script type="text/javascript" src="res/static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="res/static/js/cityJson.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+</head>
+<body>
+
+	<ul class="layui-nav">
+		<li class="layui-nav-item">
+			<a href="index.html">首页</a>
+		</li>
+		<li class="layui-nav-item">
+			<a href="shopcart.html">购物车<span class="layui-badge-dot"></span></a>
+		</li>
+		<li class="layui-nav-item" lay-unselect="">
+			<a href="javascript:;"><img src="a.jpg" class="layui-nav-img">我</a>
+			<dl class="layui-nav-child">
+				<dd><a href="personal_center.html">个人中心</a></dd>
+				<dd><a href="login.html">登陆</a></dd>
+				<dd><a href="logout">退出</a></dd>
+			</dl>
+		</li>
+	</ul>
+	<div class="header">
+		<div class="headerLayout w1200">
+			<div class="headerCon">
+				<h1 class="mallLogo">
+					<a href="#" title="母婴商城">
+						<img src="res/static/img/logo.png">
+					</a>
+				</h1>
+
+			</div>
+		</div>
+	</div>
+	<h2 class="layui-colla-title">选择收货地址</h2>
+	
+	<div style="padding: 20px; background-color: #F2F2F2;">
+      <div class="layui-row layui-col-space15">
+        <div class="layui-col-md3">
+          <div class="layui-card">
+            <div class="layui-card-header">重庆重庆（彭椿悦收）</div>
+            <div class="layui-card-body">
+              南岸 海棠溪 重庆交通大学(南岸校区)慧园<br>
+              1822399****
+            </div>
+            <i class="layui-icon " style="font-size: 30px; color: #1E9FFF;"></i>
+          </div>
+        </div>
+        <div class="layui-col-md3" onclick="test()">
+          <div class="layui-card">
+            <div class="layui-card-header">重庆重庆（彭椿悦收）</div>
+            <div class="layui-card-body">
+              南岸 海棠溪 重庆交通大学(南岸校区)慧园<br>
+              1822399****
+            </div>
+            <i class="layui-icon layui-icon-ok-circle" style="font-size: 30px; color: #1E9FFF;"></i>  
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+	<script type="text/javascript">
+		
+
+		layui.config({
+    base: 'res/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录
+}).use(['mm','element','form'],function(){
+	var mm = layui.mm;
+	var element=layui.element;
+	var form=layui.form;
+});
+function test(){
+	alert('点击了');
+}
+
+
+
+
+</script>
+</body>
+</html>
